@@ -17,7 +17,7 @@ export default async function Transactions(props: {
     return <div
         className="flow-root"
     >
-        <ul role="list" className="-mb-8 p-14  w-1/4">
+        <ul role="list" className="-mb-8 p-6 md:p-14  w-1/4">
             {transactions.map((transaction, index) => <TransactionListItem transaction={transaction} isLast={index == transactions.length - 1}  key={transaction.hash}/>)}
         </ul>
     </div>

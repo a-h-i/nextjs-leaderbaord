@@ -23,11 +23,11 @@ export function TransactionListItem(props: {
 
             </span>
                 </div>
-                <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
-                    <div>
-                        <p className="text-sm ont-medium text-gray-900"><a
+                <div className="flex justify-between  items-center w-[70vw] lg:w-auto">
+                    <div className="w-1/3">
+                        <p className="text-sm  font-medium text-gray-90"><a
                             href={`https://etherscan.io/tx/${props.transaction.hash}`}
-                            className="underline">{props.transaction.hash}</a></p>
+                            className="underline inline-block whitespace-nowrap overflow-hidden overflow-ellipsis w-full">{props.transaction.hash}</a></p>
                     </div>
                     <div className="text-right text-sm whitespace-nowrap text-gray-500">
                         <time dateTime={transactionDate.toISOString()}>{format.relativeTime(transactionDate)}</time>
