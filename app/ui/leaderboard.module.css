@@ -4,8 +4,14 @@
 
 .leaderboardWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: start;
     align-items: center;
 }
 
+@media screen and (width >= 48rem) {
+    .leaderboardWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
