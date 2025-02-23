@@ -1,7 +1,14 @@
 import {LeaderboardEntry} from "@/app/interfaces/LeaderboardEntry";
 import LeaderboardCard from "@/app/ui/leaderboard-card";
+import {Metadata} from "next";
 
-export default async function Home() {
+
+export const metadata: Metadata = {
+    title: "Leaderboard"
+}
+
+
+export default async function Page() {
     const response = await fetch('https://app.layer3.xyz/api/assignment/users');
     const data = (await response.json()) as {
         users: unknown[]

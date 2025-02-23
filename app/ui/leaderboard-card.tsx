@@ -26,7 +26,7 @@ export default function LeaderboardCard(props: {
             <ul className="font-normal text-gray-700 dark:text-gray-400">
                 <li><span className="font-bold">level: </span>{props.entry.level}</li>
                 <li><span className="font-bold">xp: </span>${props.entry.xp}</li>
-                <li><span className="font-bold">address: </span><a href={`https://etherscan.io/address/${props.entry.address}`}>{props.entry.address}</a></li>
+                <li><span className="font-bold">address: </span>{props.entry.address}</li>
             </ul>
         </Link>
 
